@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./home.scss"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import $ from "jquery";
