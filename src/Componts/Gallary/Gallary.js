@@ -3,7 +3,7 @@ import { React, Component } from 'react';
 import "./gallary.css"
 
 import Modal from 'react-modal';
-import HandleOutsideClick from "react-outside-click-event";
+// import HandleOutsideClick from "react-outside-click-event";
 
 const customStyles = {
   content: {
@@ -54,16 +54,7 @@ class Gallary extends Component {
           <div class="middle">
             <div class="icon" onClick={() => this.openimg()}><i className="fa fa-plus" aria-hidden="true" key={key}></i></div>
           </div>
-          <HandleOutsideClick
-            onOutsideClick={()=>this.closing()}
-          >
-            <Modal isOpen={isimagesmodalopen} style={customStyles} >
-              <img src={imgsrc} alt="Oops! Sorry" height={"100%"} width={"100%"} />
-              {/* <div className='d-inline'>
-          <i class="fa fa-window-close closeIcon" aria-hidden="true"  onClick={()=> this.closing()}></i>
-          </div> */}
-            </Modal>
-          </HandleOutsideClick>
+         
         </div>
 
       </>
